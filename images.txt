@@ -1,22 +1,7 @@
-# 基础镜像
-nginx:latest                          # 通用Web服务器
-alpine:latest                         # 小巧、基础的Linux系统镜像
-busybox:latest                        # 轻量级工具箱，适合测试和调试
-
-# 常用数据库
-mysql:5.7                              # 常用数据库版本，适合开发和测试
-postgres:13-alpine                    # PostgreSQL数据库，适合生产和开发环境
-mongo:latest                          # MongoDB文档数据库
-
-# 私有镜像库支持示例
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0  # Kubernetes监控工具
-
-# 开发工具镜像
-python:3.8-alpine                     # Python开发环境，适合运行脚本和应用
-node:14-alpine                        # Node.js开发环境
-golang:1.16-alpine                    # Go语言开发环境
-
-# 指定架构镜像
---platform=linux/arm64 redis:6.2-alpine   # ARM架构的Redis缓存服务
---platform=linux/amd64 xiaoyaliu/alist    # xiaoyaliu的alist镜像，指定AMD64架构
+nginx
+# 支持私库
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+xhofe/alist:latest
+# 支持指定架构
+--platform=linux/arm64 xiaoyaliu/alist
 
