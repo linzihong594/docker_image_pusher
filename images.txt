@@ -1,5 +1,1 @@
-nginx
-kasmweb/nginx:1.25.3
-python:alpine3.19
-nieaowei/campus_network_unlock:latest
-hubmirrorbytogettoyou/ghcr.io.lagrangedev.lagrange.onebot
+
